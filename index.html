@@ -21,19 +21,14 @@
 </script>
 
   <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSL9FZ6W7P"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSL9FZ6W7P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      gtag('config', 'G-VSL9FZ6W7P');
-    </script>
-  </head>
-  <body>
-    <div id="app">
-      <div id="map"></div>
-
+    gtag('config', 'G-VSL9FZ6W7P');
+  </script>
 </head>
 <body>
 <div id="view">
@@ -128,11 +123,10 @@ import { app, conf, modules } from "./Qgis2threejs.js";
 import { ViewHelper } from "three/addons/helpers/ViewHelper.js";
 modules.ViewHelper = ViewHelper;
 
-
 conf.bgColor = 0x000000;
 conf.viewpoint.preset = {lookAt:{x:244041.85696330876,y:252996.44870991213,z:-412.4520887800469},pos:{x:244134.92434395617,y:255707.35110811703,z:1480.9228143130597}};
 
-const container = document.getElementById("view")
+const container = document.getElementById("view");
 app.init(container);
 
 app.loadSceneFile("./data/index/scene.json", function (scene) {
